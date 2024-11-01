@@ -1,0 +1,238 @@
+/*body {
+    background-color: #10c28d75;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+a:hover{
+    color: #5e17eb;
+    transition: 0.3s all;
+}
+
+#Logon-btn{
+    border: 2px solid #5e17eb;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#Logon-btn:hover{
+    background-color: #5e17eb;
+    color: white;
+}
+
+a{
+    color: white;
+    
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+li{
+    display: inline-block;
+    margin: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 40px;
+    font-family: 300;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-family: 300;
+}
+
+span{
+    color: #5e17eb;
+}
+
+img{
+    width: 620px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+form{
+    display: flex;
+    height: 50px;
+    width: 50%;
+}
+
+form:hover{
+    cursor: pointer;
+}
+
+input{
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+
+}*/
+
+
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad; /* cor de fundo para o header */
+    padding: 0 auto;
+    color: white;
+}
+
+header #title {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 150px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+header ul a:hover {
+    color: #ffcc00; /* cor de destaque no hover */
+}
+
+#Logon-btn {
+    background-color: #ffcc00;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    height: 40px;
+    margin-left: 10px;
+    
+}
+
+
+#Logon-btn:hover {
+    background-color: #ffd966;
+}
+
+#Adm-btn {
+    background-color: #619ce9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#Adm-btn:hover{
+    background-color: #ffcc00;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+aside {
+    width: 40%;
+}
+
+aside h2 {
+    font-size: 2.5em;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+aside span {
+    color: #ffcc00;
+}
+
+aside p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+aside form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+article img {
+    width: 500px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    aside, article {
+        width: 100%;
+        text-align: center;
+    }
+
+    article img {
+        width: 100%;
+    }
+}
